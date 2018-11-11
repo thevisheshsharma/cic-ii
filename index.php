@@ -13,7 +13,7 @@ else{
 <!doctype html>
 <html>
     <head>
-        <title>CIC-two</title>
+        <title>CIC-iota</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -38,12 +38,12 @@ else{
 
                     <form class="login100-form validate-form" action="service/check.access.php" onsubmit="return loginValidate();" method="post">
                         <span class="login100-form-title">
-                            Welcome to two too :P
+                            iota: CIC's complex.<br>
                             <?php echo "<font size='4' color='$color'>$login_message</font>";?>
                         </span>
 
                         <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                            <input class="input100" type="text" id="myid" name="myid" placeholder="your id" autofocus=""   />
+                            <input class="input100" type="text" id="myid" name="myid" placeholder="username" autofocus=""   />
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -51,24 +51,24 @@ else{
                         </div>
 
                         <div class="wrap-input100 validate-input" data-validate = "Password is required">
-                            <input class="input100" type="password" id="mypassword" name="mypassword" placeholder="your password"  />
+                            <input class="input100" type="password" id="mypassword" name="mypassword" placeholder="secret-key"  />
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-lock" aria-hidden="true"></i>
                             </span>
                         </div>
                         
-                        <div class="container-login100-form-btn">
-                            <button class="login100-form-btn">
+                        <div class="container-login100-form-btn p-t-136">
+                            <button class="login100-form-btn txt2">
                                 Login
                             </button>
                         </div>
 
                         <div class="text-center p-t-136">
-                            <a class="txt2" href="#">
-                                Create your Account
-                                <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-                            </a>
+                            <span class="txt2" href="#">
+                                Made with
+                                <i class="fa fa-heart" aria-hidden="true"></i>   for Cluster Innovation Centre.
+                            </span>
                         </div>
                     </form>
                 </div>

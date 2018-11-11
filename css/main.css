@@ -1,6 +1,16 @@
 
 
 
+.sidebar-navigation-button {
+  color: white;
+}
+
+
+
+
+#sidebar {
+  position: fixed;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
@@ -175,6 +185,7 @@ iframe {
   background: linear-gradient(-135deg, #c850c0, #4158d0);
 }
 
+
 .wrap-login100 {
   width: 960px;
   background: #fff;
@@ -197,8 +208,17 @@ iframe {
   width: 316px;
 }
 
+.sidebar-logo-pic {
+  width: 150px;
+
+}
+
 .login100-pic img {
   max-width: 100%;
+}
+
+.sidebar-logo-pic img {
+  max-width: 10%;
 }
 
 
@@ -367,6 +387,11 @@ iframe {
   .login100-pic {
     width: 35%;
   }
+  
+  .sidebar-logo-pic {
+    width: 35%;
+  }
+  
 
   .login100-form {
     width: 50%;
@@ -379,6 +404,10 @@ iframe {
   }
 
   .login100-pic {
+    display: none;
+  }
+
+  .sidebar-logo-pic {
     display: none;
   }
 

@@ -44,7 +44,7 @@ Select Attendance that you are present: Current Month:<input type="radio"  oncli
 </div>	
 <hr/>
 <div align="center" >
-<table id="mypresent" border="1">
+<table class="table-hover" id="mypresent" border="1">
 
 </table>
 </div>
@@ -56,7 +56,7 @@ Select Attendance that you are absent : Current Month:<input type="radio"  oncli
 </div>	
 <hr/>
 <div align="center" >
-<table id="myabsent" border="1">
+<table class="table-hover" id="myabsent" border="1">
 
 </table>
 </div>

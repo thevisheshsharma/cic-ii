@@ -38,7 +38,7 @@ $stinfo=mysql_fetch_array($st);
 			  
 			  <div align="center">
 			  	<h1>My Information</h1>
-			  <table border="1">
+			  <table class="table-hover" border="1">
 			  <tr>
 			  
 			  <th>Student ID</th>
@@ -70,7 +70,7 @@ $stinfo=mysql_fetch_array($st);
 			  </tr>
 			  
 			  
-			  <table
+			  </table>
 								
 								</div>
 		</body>

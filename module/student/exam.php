@@ -57,7 +57,7 @@ while($clnn=mysql_fetch_array($res))
 </div>	
 <hr/>
 <div align="center">
-<table id="mycourseexamschedule" border="1" >
+<table class="table-hover" id="mycourseexamschedule" border="1" >
 </table>
 </div>
 

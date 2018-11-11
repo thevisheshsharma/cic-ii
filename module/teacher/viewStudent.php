@@ -48,7 +48,7 @@ while($row = mysql_fetch_array($res)){
 				</ul>
 			  <hr/>
         <center>
-            <table>
+            <table class="table">
                 <tr>
                     <td><b>Search By Id Or Name OR Class Id: </b></td>
                     <td><input type="text" name="searchId" placeholder="Search By Id Or Name:" onkeyup="getStudent(this.value);"></td>
@@ -58,7 +58,7 @@ while($row = mysql_fetch_array($res)){
         <br/>
         <center><h2>Students List</h2></center>
         <center>
-            <table border="1" id='studentList'>
+            <table class="table-hover" border="1" id='studentList'>
                 <tr>
                     <th>ID</th>
                     <th>Name</th>

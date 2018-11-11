@@ -57,7 +57,7 @@ Select Course<select id="mycourse" onchange="ajaxRequestToGetCourseInfo();" name
 
 </select>
 <h4>Course Information:<hr/></br><label id="mycourseteacher"></label><br/>
-<table id="mycourseinfo">
+<table class="table-hover" id="mycourseinfo">
 </table>
 <hr/>
 

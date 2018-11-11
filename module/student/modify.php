@@ -48,7 +48,7 @@ $stinfo=mysql_fetch_array($st);
 			  	<h1>Change Password</h1>
 				
 				<form  onsubmit="return modifyValidate();" action="modifysave.php" method="post">
-			  <table border="1">
+			  <table class="table" tborder="1">
 			  <tr>
 			  <th>Student Password</th>
 			 </tr>

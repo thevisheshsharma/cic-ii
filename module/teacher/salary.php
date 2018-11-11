@@ -39,7 +39,7 @@ while($r=mysql_fetch_array($resmon))
 			    <div align="center">
 			  	<h1 style="background-color:black; color:white;">My Salary</h1>
 				<hr/>
-			  <table border="1">
+			  <table class="table-hover" border="1">
 			  <tr>
 			  <th>Teacher Monthly Salary</th>
 			 <th>Teacher Payable Salary This Month</th>

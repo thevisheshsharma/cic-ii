@@ -55,7 +55,7 @@ Select Month: Current Month:<input type="radio"  onclick="ajaxRequestToGetAttend
 <hr/>
 <div align="center" >
 
-<table id="mypresent" border="1">
+<table class="table-hover" id="mypresent" border="1">
 
 </table>
 </div>
@@ -66,7 +66,7 @@ Select Month : Current Month:<input type="radio"  onclick="ajaxRequestToGetAtten
 </div>	
 <hr/>
 <div align="center" >
-<table id="myabsent" border="1">
+<table class="table-hover" id="myabsent" border="1">
 
 </table>
 </div>

@@ -18,7 +18,7 @@ include_once('main.php');
         <center>
           <h2>Update your profile!!!.</h2>
             <form action="#" method="post" onsubmit="return newTeacherValidation();">
-                <table border="1" cellpadding="6" id='updateTeacherData'>
+                <table class="table-hover" border="1" cellpadding="6" id='updateTeacherData'>
 				<?php include ('searchForUpdateTeacher.php'); ?>
                 </table>
             </form>

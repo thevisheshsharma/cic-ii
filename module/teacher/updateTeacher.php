@@ -1,30 +1,24 @@
 <?php
 include_once('main.php');
 ?>
-<html>
-    <head>
-		    <link rel="stylesheet" type="text/css" href="../../source/CSS/style.css">
-				<script src = "JS/login_logout.js"></script>
-               <script src = "JS/searchForUpdateTeacher.js"></script>
-		</head>
-    <body>
-			 <?php include('index.php'); ?>
-						</li>
-				</ul>
-			  <hr/>
+<?php
+include_once('sidebar-teacher.php');
+?>      
+        <div class="col-md-offset-3 p-t-100">
+            <center>
+            <h2>Update your profile</h2>
+            <hr>
 
-        </center>
         <br/>
-        <center>
-          <h2>Update your profile!!!.</h2>
-            <form action="#" method="post" onsubmit="return newTeacherValidation();">
-                <table class="table-hover" border="1" cellpadding="6" id='updateTeacherData'>
-				<?php include ('searchForUpdateTeacher.php'); ?>
+            <form action="#" method="post">
+                <table class="table table-hover" border="1" cellpadding="15" id='updateTeacherData'>
+                    <?php include ('searchForUpdateTeacher.php'); ?>
                 </table>
+                <input class="container-login100-form-btn login100-form-btn txt2" type="Submit" name="submit" value="Submit" onsubmit="newTeacherValidation();">
             </form>
         </center>
-		</body>
-</html>
+
+
 <?php
 include_once('../../service/mysqlcon.php');
 if(!empty($_POST['submit'])){
@@ -44,7 +38,8 @@ if(!empty($_POST['submit'])){
     if(!$success||!$success1) {
         die('Could not Update data: '.mysql_error());
     }
-    echo "Update data successfully\n";
+    echo "\nUpdate data successfully\n";
 	
 }
 ?>
+   <script src = "JS/searchForUpdateTeacher.js"></script>

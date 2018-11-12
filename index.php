@@ -33,7 +33,7 @@ else{
             <div class="container-login100">
                 <div class="wrap-login100">
                     <div class="login100-pic js-tilt" data-tilt>
-                        <img src="source/images/img-01.png" alt="IMG">
+                        <img src="source/images/iota-sq.png" alt="IMG">
                     </div>
 
                     <form class="login100-form validate-form" action="service/check.access.php" onsubmit="return loginValidate();" method="post">

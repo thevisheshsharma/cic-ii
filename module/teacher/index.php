@@ -1,35 +1,40 @@
 <?php
 include_once('main.php');
+include_once('../../service/mysqlcon.php');
 ?>
-<html>
-    <head>
-		    <link rel="stylesheet" type="text/css" href="../../source/CSS/style.css">
-				<script src = "JS/login_logout.js"></script>
-		</head>
-    <body>
-			  <div class="header"><h1>School Management System</h1></div>
-			  <div class="divtopcorner">
-				    <img src="../../source/logo.jpg" height="150" width="150" alt="School Management System"/>
+<?php
+include_once('sidebar-teacher.php');
+?>
+	<div class="col-md-offset-3 p-t-100">
+		<center>
+			<h2>Wecome to iota.</h2><hr>
+				<a class ="menulista" href="course.php">Students Grade</a>
+				<a class ="menulista" href="attendance.php">Attendance</a>
+				<hr/>
+
+
+				<div align="center">
+					<img src="../images/<?php echo $check ?>.jpg" alt="<?php echo $check ?>"/>
 				</div>
-			<br/><br/>
-				<ul>
-				    <li class="manulist">
-						    <a class ="menulista" href="index.php">Home</a>
-								<a class ="menulista" href="updateTeacher.php">Update Profile</a>
-								<a class ="menulista" href="viewProfile.php">View Profile</a>
-								<a class ="menulista" href="course.php">Students Grade</a>
-								<a class ="menulista" href="courses.php">Courses</a>
-								<a class ="menulista" href="attendance.php">Attendance</a>
-								<a class ="menulista" href="exam.php">Exam Schedule</a>
-								<a class ="menulista" href="salary.php">Salary</a>
-								<a class ="menulista" href="report.php">Report</a>
-								<a class ="menulista" href="searchStudent.php">Search Portal</a>
-								<div align="center">
-								<h4>Hi! <?php echo $check." ";?></h4>
-								    <a class ="menulista" href="logout.php" onmouseover="changemouseover(this);" onmouseout="changemouseout(this,'<?php echo ucfirst($loged_user_name);?>');"><?php echo "Logout";?></a>
-						    </div>
-						</li>
-				</ul>
-			  <hr/>
+
+				<div class ="header">
+				<?php
+					$sql = "SELECT * FROM teachers WHERE id='$check';";
+					$res = mysql_query($sql);
+					while($row = mysql_fetch_array($res)){
+					   echo "<center>";
+					   echo "ID: ".$row['id']."<br />";
+					   echo "Name: ".$row['name']."<br />";
+					   echo "Phone: ".$row['phone']."<br />";
+					   echo "Date of Birth: ".$row['dob']."<br />";
+					   echo "Phone ".$row['phone']."<br />";
+					   echo "Email Address: ".$row['email']."<br />";
+					   echo "Sex: ".$row['sex']."<br />";
+					   echo "Hire DAte: ".$row['hiredate']."<br />";
+					   echo "Salary: ".$row['salary']."<br />";
+					   echo "</center>";
+					}
+				?>
+				</div>
 		</body>
 </html>

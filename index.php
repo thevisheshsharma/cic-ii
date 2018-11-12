@@ -38,7 +38,7 @@ else{
 
                     <form class="login100-form validate-form" action="service/check.access.php" onsubmit="return loginValidate();" method="post">
                         <span class="login100-form-title">
-                        	<img src="1.png" class="img-fluid" width="80%" alt="Responsive image">
+                        	<img src="source/images/1.png" class="img-fluid" width="80%" alt="Responsive image">
                             <hr>IOTA | CIC.<br>
                             <?php echo "<font size='4' color='$color'>$login_message</font>";?>
                         </span>

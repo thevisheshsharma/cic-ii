@@ -1,14 +1,12 @@
 <?php
 include_once('main.php');
 ?>
-
+<?php
+include_once('links.php');
+?>
 <?php
 include_once('sidebar-admin.php');
 ?>
-
-        <div class="col-md-8">
-			<hr>
-        </div>
 
 	    </div>
 		

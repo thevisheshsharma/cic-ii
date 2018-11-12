@@ -14,6 +14,14 @@
         <link rel="stylesheet" type="text/css" href="../../css/main.css">
     	<link rel="stylesheet" type="text/css" href="../../source/CSS/style.css">
 
+    	<script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../../vendor/bootstrap/js/popper.js"></script>
+        <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../vendor/select2/select2.min.js"></script>
+        <script src="../../vendor/tilt/tilt.jquery.min.js"></script>
+        <script src="../../js/main.js"></script>
+
+
     	<script src = "JS/login_logout.js"></script>
     </head>
 
@@ -27,45 +35,96 @@
 							<h4 class="text-white">Hi! Admin <br> <?php echo $check." ";?></h4><hr>
 						</span>
 					</div>
-
-					<ul>
-						<li class="">
-
-							<div class="btn-group">
-								<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Manage Student
-								</button>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">New Student</a>
-									<a class="dropdown-item" href="#">View Student</a>
-									<a class="dropdown-item" href="#">UpdateStudent</a>
-									<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="#">Delete Student</a>
-									</div>
+						<ul>
+							<li class="">
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Manage Student <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="addStudent.php">New Student</a></li>
+										<li><a href="updateStudent.php">Update Student</a></li>
+										<li><a href="deleteStudent.php">Delete Student</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="viewStudent.php">View Student</a></li>
+									</ul>
 								</div>
-<br>
+								<br> <br>
 
-<div class="dropdown">
-  <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-    Dropdown trigger
-    <span class="caret"></span>
-  </a>
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Manage Teacher <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="addTeacher.php">New Teacher</a></li>
+										<li><a href="updateTeacher.php">Update Teacher</a></li>
+										<li><a href="deleteTeacher.php">Delete Teacher</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="viewTeacher.php">View Teacher</a></li>
+									</ul>
+								</div>
+								<br> <br>
 
-  <ul class="dropdown-menu" aria-labelledby="dLabel">
-  	
-  </ul>
-</div>
-<br>
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Manage Courses <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="addCourse.php">New Course</a></li>
+										<li><a href="deleteCourse.php">Delete Course</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="viewCourse.php">View Course</a></li>
+									</ul>
+								</div>
+								<br> <br>
 
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Attendance <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="teacherAttendance.php">Teacher's attedance</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="viewAttendance.php">View attendance</a></li>
+									</ul>
+								</div>
+								<br> <br>
 
-							<a class ="text-white" href="manageStudent.php">Manage Student</a> <br>
-							<a class ="text-white" href="manageTeacher.php">Manage Teacher</a> <br>
-							<a class ="text-white" href="course.php">Course</a> <br>
-							<a class ="text-white" href="attendance.php">Attendance</a> <br>
-							<a class ="text-white" href="examSchedule.php">Exam Schedule</a> <br>
-							<a class ="text-white" href="salary.php">Salary</a> <br>
-							<a class ="text-white" href="report.php">Report</a> <br>
-							<a class ="text-white" href="payment.php">Payment</a>
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Exam Schedule <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="createExamSchedule.php">Create schedule</a></li>
+										<li><a href="updateExamSchedule.php">Update schedule</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="viewExamSchedule.php">View schedule</a></li>
+									</ul>
+								</div>
+								<br> <br>
+
+								<div class="btn-group">
+									<a href="report.php">
+										<button type="button" class="btn btn-default">
+											Teacher's report <span class=""></span>
+										</button>
+									</a>
+								</div>
+								<br> <br>
+
+								<div class="btn-group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Payment <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a href="addPayment.php">Add Payment</a></li>
+										<li><a href="deletePayment.php">Delete Payment</a></li>
+									</ul>
+								</div>
+								<br> <br>
+
+							</li>
+						</ul>
 
 							<a class="container-login100-form-btn" href="logout.php">
 	                            <button class="login100-form-btn txt2">

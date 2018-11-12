@@ -1,41 +1,16 @@
 <?php
 include_once('main.php');
-
 ?>
-<html>
-    <head>
-		    <link rel="stylesheet" type="text/css" href="../../source/CSS/style.css">
-			<script type="text/javascript" src="jquery-1.12.3.js"></script>
-			<script type="text/javascript" src="Attendance.js"></script>
-			<script src = "JS/login_logout.js"></script>
-			
-				
-	            
-		</head>
-    <body  onload="ajaxRequestToGetAttendanceTeacherPresentThisMonth();">
-             		 
-			 <div class="header"><h1>School Management System</h1></div>
-			  <div class="divtopcorner">
-				    <img src="../../source/logo.jpg" height="150" width="150" alt="School Management System"/>
-				</div>
-			<br/><br/>
-				<ul>
-				    <li class="manulist" >
-						    <a class ="menulista" href="index.php">Home</a>
-								<a class ="menulista" href="attendance.php">Go Attendance</a>
-								
-								<div align="center">
-								<h4>Hi! <?php echo $check." ";?> </h4>
-								<a class ="menulista" href="logout.php" onmouseover="changemouseover(this);" onmouseout="changemouseout(this,'<?php echo ucfirst($loged_user_name);?>');"><?php echo "Logout";?></a>
-						</div>
-						 
-				    
-			
-						</li>
-				</ul>
+<?php
+include_once('sidebar-admin.php');
+?>
+
+    <div class="col-md-offset-3 p-t-100">    
+    	<center>
+	    <body  onload="ajaxRequestToGetAttendanceTeacherPresentThisMonth();">
+	    	<h2>View Attendance</h2>
 			  <hr/>
-			  <div align="center" style="background-color:orange;">
-			  
+			  <div align="center" style="background-color:orange;">			  
 			   Select your Teacher:<select id="teaid" name="teaid" onchange="ajaxRequestToGetAttendanceTeacherPresentThisMonth();" style="background-color:white;"><?php  
 
 
@@ -110,10 +85,9 @@ Select Attendance  Staff absent : Current Month:<input type="radio"  onclick="aj
 <table id="mystaffabsent" border="1">
 
 </table>
-</div>
-
-							
-							
+</div>											
 		</body>
+			<script type="text/javascript" src="jquery-1.12.3.js"></script>
+			<script type="text/javascript" src="Attendance.js"></script>
+			<script src = "JS/login_logout.js"></script>
 </html>
-

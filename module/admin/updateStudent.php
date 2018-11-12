@@ -1,51 +1,28 @@
 <?php
 include_once('main.php');
 ?>
-<html>
-    <head>
-		    <link rel="stylesheet" type="text/css" href="../../source/CSS/style.css">
-				<script src = "JS/login_logout.js"></script>
-        <script src = "JS/searchForUpdateStudent.js"></script>
-		</head>
-    <body>
-			  <div class="header"><h1>School Management System</h1></div>
-			  <div class="divtopcorner">
-				    <img src="../../source/logo.jpg" height="150" width="150" alt="School Management System"/>
-				</div>
-			<br/><br/>
-				<ul>
-				    <li class="manulist">
-						    <a class ="menulista" href="index.php">Home</a>
-								<a class ="menulista" href="manageStudent.php">Manage Student</a>
-								<a class ="menulista" href="index.php">Manage Teacher</a>
-								<a class ="menulista" href="index.php">Manage Parent</a>
-								<a class ="menulista" href="index.php">Manage Staff</a>
-								<a class ="menulista" href="index.php">Course</a>
-								<a class ="menulista" href="index.php">Attendance</a>
-								<a class ="menulista" href="index.php">Exam Schedule</a>
-								<a class ="menulista" href="index.php">Salary</a>
-								<a class ="menulista" href="index.php">Report</a>
-								<a class ="menulista" href="index.php">Payment</a>
-								<div align="center">
-								<h4>Hi!admin <?php echo $check." ";?></h4>
-								<a class ="menulista" href="logout.php" onmouseover="changemouseover(this);" onmouseout="changemouseout(this,'<?php echo ucfirst($loged_user_name);?>');"><?php echo "Logout";?></a>
-						</div>
-						</li>
-				</ul>
-			  <hr/>
+<?php
+include_once('sidebar-admin.php');
+?>
+        
+        <div class="col-md-offset-3 p-t-100">
+			  
         <center>
+            <h2>Update list (only one student at a time)</h2>
+            <hr>
             <table>
                 <tr>
                     <td><b>Search By Id Or Name: </b></td>
-                    <td><input type="text" name="searchId" placeholder="Search By Id Or Name:" onkeyup="getStudentForUpdate(this.value);"></td>
+                    <td>
+                        <input class="input100" type="text" id="mypassword" name="searchId" placeholder="Search By Name or ID"  onkeyup="getStudentForUpdate(this.value);">
+                    </td>
                 </tr>
             </table>
-        </center>
+
         <br/>
-        <center>
-          <h2>Only One Student Can Update in a time.</h2>
+
             <form action="#" method="post" onsubmit="return newStudentValidation();" enctype="multipart/form-data">
-                <table border="1" cellpadding="6" id='updateStudentData'>
+                <table class="table table-hover table-responsive" border="1" cellpadding="15" id='updateStudentData'>
                 </table>
             </form>
         </center>
@@ -68,7 +45,7 @@ if(!empty($_POST['submit'])){
     $image = $_POST['pic'];
     $uploads_dir = "../images/student";
     move_uploaded_file($image, "$uploads_dir/$image");
-    $sql = "UPDATE students SET id='$stuId', name='$stuName', password='$stuPassword', phone='$stuPhone', email='$stuEmail', sex='$stugender', dob='$stuDOB', addmissiondate='$stuAddmissionDate', address='$stuAddress', parrentid='$stuParentId', classid='$stuClassId' WHERE id='$stuId'";
+    $sql = "UPDATE students SET id='$stuId', name='$stuName', password='$stuPassword', phone='$stuPhone', email='$stuEmail', sex='$stugender', dob='$stuDOB', addmissiondate='$stuAddmissionDate', address='$stuAddress', parentid='$stuParentId', classid='$stuClassId' WHERE id='$stuId'";
     $success = mysql_query( $sql,$link );
     if(!$success) {
         die('Could not Update data: '.mysql_error());
@@ -76,3 +53,6 @@ if(!empty($_POST['submit'])){
     echo "Update data successfully\n";
 }
 ?>
+
+    <script src = "JS/login_logout.js"></script>
+    <script src = "JS/searchForUpdateStudent.js"></script>

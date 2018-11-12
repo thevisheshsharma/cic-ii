@@ -13,8 +13,9 @@ include_once('sidebar-student.php');
 
 			  <hr/>
 			  
-			  <div align="center">
-			  	<h1>My Information</h1>
+			  <div class="card-img-top" align="center">
+			  	<h1 class="card-title">My Information</h1>
+			
 			  <table class="table table-hover" border="1">
 			  <tr>
 			  

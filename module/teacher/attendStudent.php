@@ -10,6 +10,6 @@ if($_POST['submit']){
         die('Attendance Error: '.mysql_error());
     }
     echo "Attendance Complete\n";
-    header("Location:../admin/teacherAttendance.php");
+    header("Location:../teacher/studentAttendance.php");
 }
 ?>

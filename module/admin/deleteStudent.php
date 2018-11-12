@@ -4,7 +4,7 @@ include_once('../../service/mysqlcon.php');
 $sql = "SELECT * FROM students;";
 $res= mysql_query($sql);
 $string = "";
-$images_dir = "../images/";
+$images_dir = "../../images/";
 //<input type="checkbox" name="vehicle" value="Car">
 while($row = mysql_fetch_array($res)){
     $picname = $row['id'];

@@ -36,14 +36,6 @@
 					</div>
 						<ul>
 							<li class="">
-								<div class="btn-group">
-									<a href="modify.php">
-										<button type="button" class="btn btn-default">
-											Change Password <span class=""></span>
-										</button>
-									</a>
-								</div>
-								<br> <br>
 
 								<div class="btn-group">
 									<a href="attendance.php">

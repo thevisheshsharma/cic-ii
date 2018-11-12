@@ -6,7 +6,7 @@ if($login_code=="false"){
 }
 else{
     $login_message="Please Login !";
-	  $color="green";
+	$color="green";
 }
 ?>
 
@@ -43,8 +43,8 @@ else{
                             <?php echo "<font size='4' color='$color'>$login_message</font>";?>
                         </span>
 
-                        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                            <input class="input100" type="text" id="myid" name="myid" placeholder="username" autofocus=""   />
+                        <div class="wrap-input100 validate-input" data-validate = "Valid username is required: xx-000-00">
+                            <input class="input100" type="text" id="myid1" name="myid" placeholder="username" autofocus=""/>
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -52,7 +52,7 @@ else{
                         </div>
 
                         <div class="wrap-input100 validate-input" data-validate = "Password is required">
-                            <input class="input100" type="password" id="mypassword" name="mypassword" placeholder="secret-key"  />
+                            <input class="input100" type="password" id="mypassword1" name="mypassword" placeholder="secret-key"  />
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-lock" aria-hidden="true"></i>
@@ -87,7 +87,6 @@ else{
             })
         </script>
         <script src="js/main.js"></script>
-
             
     </body>
 </html>

@@ -32,7 +32,7 @@
 					<div class="login100-pic">
 						<img src="../../source/images/iota-logo-white.png" alt="IMG"> <hr>
 						<span class="login100-form-title">
-							<h4 class="text-white">Hi! Admin <br> <?php echo $check." ";?></h4><hr>
+							<h4 class="text-white">Hi! Professor <br> <?php echo $check." ";?></h4><hr>
 						</span>
 					</div>
 						<ul>
@@ -66,14 +66,14 @@
 								</div>
 								<br> <br>
 
+
+
 								<div class="btn-group">
 									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										Attendance <span class="caret"></span>
 									</button>
 									<ul class="dropdown-menu">
 										<li><a href="studentAttendance.php">Student's Attendence</a></li>
-									<!--	<li role="separator" class="divider"></li>
-										<li><a href="viewTeacher.php">View Attendence</a></li> -->
 									</ul>
 								</div>
 								<br> <br>

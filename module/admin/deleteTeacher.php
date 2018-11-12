@@ -4,7 +4,7 @@ include_once('../../service/mysqlcon.php');
 $sql = "SELECT * FROM teachers;";
 $res= mysql_query($sql);
 $string = "";
-$images_dir = "../images/";
+$images_teachers = "../../images/";
 while($row = mysql_fetch_array($res)){
     $picname = $row['id'];
     $string .= "<form action='deleteTeacherTableData.php' method='post'>".
@@ -14,20 +14,14 @@ while($row = mysql_fetch_array($res)){
     '</td><td>'.$row['phone'].'</td><td>'.$row['email'].'</td><td>'.$row['address'].
     '</td><td>'.$row['sex'].'</td><td>'.$row['dob'].'</td><td>'.$row['hiredate'].
     '</td><td>'.$row['salary'].
-    "</td><td><img src='".$images_dir.$picname.".jpg' alt='$picname' width='150' height='150'>".'</td></tr></form>';
+    "</td><td><img src='".$images_teachers.$picname.".jpg' alt='$picname' width='150' height='150'>".'</td></tr></form>';
 }
 ?>
 
 <?php
-include_once('main.php');
-?>
-
-<?php
 include_once('sidebar-admin.php');
-?>
-        
+?>        
         <div class="col-md-offset-3 p-t-100">
-
             <center>
                 <h2>Delete Teacher</h2><hr/>
                   <table class="table table-hover w-auto table-responsive-sm" border="1">

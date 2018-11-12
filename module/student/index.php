@@ -44,7 +44,7 @@ include_once('sidebar-student.php');
 			  <td><?php echo $stinfo['address'];?></td>
 			  <td><?php echo $stinfo['parentid'];?></td>
 			  <td><?php echo $stinfo['classid'];?></td>
-			  <td><img src="../images/<?php echo $check.".jpg";?>" height="95" width="95" alt="<?php echo $check." photo";?> "/></td>
+			  <td><img src="../../images/<?php echo $check.".jpg";?>" height="95" width="95" alt="<?php echo $check." photo";?> "/></td>
 			  </tr>
 			  
 			  

@@ -1,0 +1,106 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+a .btn .btn-secondary .btn-lg{
+	font-size: 15px;
+	margin: 10px;
+	padding: 10px 16px;
+  
+}
+#header{
+	padding: 10px;
+	margin:50px auto 40px auto;
+}
+.display-4{
+	font-size: 45px;
+	font-weight: 200;
+}
+#tagline{
+	margin-top:50px;
+	padding: 10px;
+}
+.navbar-default{
+	background-color: #fff;
+	border-color: #fff;
+}
+#hello{
+	margin:50px auto 0px auto;
+	padding: auto; 
+}
+@media(min-width:992px){
+	#hello{
+		margin:20px 0px 0px -130px;
+	}
+	#header{
+		margin:60px 0px 40px 180px;
+	}
+}
+#dashboard{
+	border: 1px solid; 
+	border-color: #E6E7E8;
+	border-radius: 10px;
+	padding:10px 40px 40px 40px;
+	margin:30px auto 50px auto;
+	box-shadow: 0.5px 0.5px 3px 0.5px #E6E7E8;
+	background-color: #fff;
+}
+.video-player{
+	margin:10px;
+}
+.video-player .title{
+	font-size: 25px;
+	padding: 10px;
+}
+.abnormal{
+	margin:10px;
+}
+.abnormal .title{
+	font-size:25px;
+	padding: 5px;
+}
+.faces{
+	margin:10px;
+}
+.faces .title{
+	font-size: 25px;
+	padding: 10px;
+}
+video{
+	border-radius: 10px;
+}
+.body-content{
+	margin-top: 10px;
+}
+.body-content .text-content{
+	border: 1px solid; 
+	border-color: #E6E7E8;
+	border-radius: 10px;
+	padding:10px 40px 40px 40px;
+	margin:20px auto 50px auto;
+	box-shadow: 0.5px 0.5px 3px 0.5px #E6E7E8;
+	background-color: #fff;
+}
+.body-content .text-content .title{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+	margin-top:20px;
+}
+.body-content .text-content .title hr{
+	margin: 0px auto;
+	border: 1px solid;
+}
+.body-content .text-content .text .subtitle{
+	font-size: 20px;
+	margin:10px;
+	padding: 10px;
+}
+.body-content .text-content .text p{
+	text-align:justify;
+	margin:10px;
+	padding: 10px;
+}
+.img-circle {
+    border-radius: 50%;
+    padding: 5px;
+}
